@@ -37,63 +37,7 @@
 
     <!----------------HEADER---------------->
     <header class="header" data-header>
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="./assets/images/turquoise-logo.svg" width="70" height="14" 
-                alt="Adex home" class="logo-light">
-
-                <img src="./assets/images/turquoise-logo.svg" width="70" height="14" 
-                alt="Adex home" class="logo-dark">
-            </a>
-            <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="#" class="logo">
-                        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
-                    </a>
-                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                    </button>
-                </div>
-
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#" class="navbar-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="wrapper">
-                    <a href="malito:info@email.com" class="contact-link">info@email.com</a>
-                    <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
-                </div>
-
-                <ul class="social-list">
-                    <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="#" class="social-link"><ion-icon name="logo-dribbble"></ion-icon></a></li>
-                    <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                </ul>
-
-            </nav>
-
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-            </button>
-
-            <div class="overlay" data-nav-toggler data-overlay></div>
-        </div>
+        <div id="navbar-placeholder"></div>
     </header>
 
 
@@ -101,7 +45,6 @@
         <article>
 
             <!----------HERO SECTION---------->
-
             <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.svg');">
 
                 <div class="container">
@@ -133,17 +76,15 @@
                                 </li>
 
                                 <li class="slider-item">
-                                    <div class="hero-card">
                                         <figure class="img-holder" style="--width: 575; --height: 550;">
                                             <img src="./assets/images/engineering-hero-2.jpg" alt="hero banner" 
                                             width="575" height="550" class="img-cover">
                                         </figure>
-                                    </div>
                                 </li>
 
                                 <li class="slider-item">
                                     <figure class="img-holder" style="--width: 575; --height: 550;">
-                                        <img src="./assets/images/hero-slide-3.jpg" alt="hero banner" 
+                                        <img src="./assets/images/engineering-hero-3.jpg" alt="hero banner" 
                                         width="575" height="550" class="img-cover">
                                     </figure>
                                 </li>
@@ -242,109 +183,181 @@
                 </div>
             </section>
 
-            <!----------SERVICE SECTION------------->
 
+            <!----------SERVICE SECTION-------------> 
             <section class="section service" aria-labelledby="service-label">
 
                 <div class="container">
-
-                    <p class="section-subtitle" id="service-label">What We Do?</p>
-
-                    <h2 class="h2 section-title">
-                        The service we offer is specifically designed to meet your needs.
-                    </h2>
-
-                    <ul class="grid-list">
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">24/7 Support</h3>
-
-                                <p class="card-text">
-                                    Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Secure Payments</h3>
-
-                                <p class="card-text">
-                                    Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Daily Updates</h3>
-
-                                <p class="card-text">
-                                    Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Market Research</h3>
-
-                                <p class="card-text">
-                                    Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-                    </ul>
+            
+                <p class="section-subtitle" id="service-label">Our Services</p>
+            
+                <h2 class="h2 section-title">
+                    We deliver tailored services to meet your business needs.
+                </h2>
+            
+                <ul class="grid-list">
+            
+                    <!-- Engineering and Contracting -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="hammer-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Engineering and Contracting</h3>
+            
+                        <p class="card-text">
+                        Expertise in engineering and contracting services designed to support projects across various industries with precision and reliability.
+                        </p>
+            
+                        <a href="service-details.html?service=engineering" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Equipment Lease -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Equipment Lease</h3>
+            
+                        <p class="card-text">
+                        Reliable equipment leasing services, offering modern machinery to meet the needs of any project or industry.
+                        </p>
+            
+                        <a href="service-details.html?service=equipment" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Logistics -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="car-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Logistics</h3>
+            
+                        <p class="card-text">
+                        Streamlined logistics solutions for seamless transportation, workforce mobility, and supply chain efficiency.
+                        </p>
+            
+                        <a href="service-details.html?service=logistics" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Sponsorship -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Sponsorship</h3>
+            
+                        <p class="card-text">
+                        Trusted sponsorship services for non-Kuwaiti companies, enabling seamless operations in Kuwait.
+                        </p>
+            
+                        <a href="service-details.html?service=sponsorship" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Human Resources -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="people-circle-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Human Resources</h3>
+            
+                        <p class="card-text">
+                        Comprehensive HR solutions, including recruitment, workforce management, and skill-building programs.
+                        </p>
+            
+                        <a href="service-details.html?service=hr" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Construction Works -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="construct-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Construction Works</h3>
+            
+                        <p class="card-text">
+                        Delivering exceptional construction solutions, ensuring quality, safety, and timely project execution across the GCC region.
+                        </p>
+            
+                        <a href="service-details.html?service=construction" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                    <!-- Search and Select Service -->
+                    <li>
+                    <div class="service-card">
+            
+                        <div class="card-icon">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                        </div>
+            
+                        <h3 class="h4 card-title">Search and Select Service</h3>
+            
+                        <p class="card-text">
+                        Professional search and selection services to match you with the right talent for your business needs across industries.
+                        </p>
+            
+                        <a href="service-details.html?service=search-select" class="btn-text">
+                        <span class="span">Learn More</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+            
+                    </div>
+                    </li>
+            
+                </ul>
                 </div>
-
+            
             </section>
-
-
+  
+              
+              
             <!-------------ABOUT SECTION-------------->
             <section class="section about" aria-labelledby="about-label">
 
