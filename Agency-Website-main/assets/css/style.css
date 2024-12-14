@@ -334,7 +334,7 @@ body.nav-active {
   position: fixed;
   top: 0;
   left: -300px;
-  background-color: var(--raisin-black);
+  background-color: var(--secondary-color);
   color: var(--white);
   max-width: 300px;
   width: 100%;
@@ -608,12 +608,13 @@ body.nav-active {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius-6);
   height: 100%; /* Ensures all cards take up equal height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for scaling and shadow */
 }
 
 .service-card .card-icon {
   width: 60px;
   height: 60px;
-  background-color: var(--violet-blue-crayola);
+  background-color: var(--secondary-color);
   display: grid;
   place-items: center;
   color: var(--white);
@@ -651,6 +652,13 @@ body.nav-active {
 
 .service .section-title {
   margin-bottom: 40px;
+}
+
+.service-card:hover {
+  transform: scale(1.10); /* Slight scaling on hover */
+  box-shadow: none; /* Stronger box shadow on hover */
+  background-color: var(--turquiose);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Horizontal, vertical, blur radius, and color */
 }
 
 /*-----------------------------------*\
@@ -732,7 +740,7 @@ body.nav-active {
 }
 
 .feature-card .card-icon {
-  background-color: var(--lavender-web);
+  background-color: var(--secondary-color);
   font-size: 1.4rem;
   padding: 4px;
   border-radius: var(--radius-circle);
@@ -1053,6 +1061,7 @@ Resonsive for larger than 992 px screen
     display: block;
     margin-inline: auto 24px;
   }
+
 
   .navbar-list {
     display: flex;

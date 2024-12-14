@@ -1,31 +1,41 @@
 "use strict";
 
-/*ADD Event listener on multiple elements*/
-
+/* ADD Event Listener on Multiple Elements */
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
 };
 
-/*NAVBAR TOGGLE FOR MOBILE */
+/* NAVBAR TOGGLE FOR MOBILE */
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("navbar.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load navbar.html");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      document.querySelector("#navbar-placeholder").innerHTML = data;
 
-const navbar = document.querySelector("[data-navbar]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const overlay = document.querySelector("[data-overlay]");
+      const navbar = document.querySelector("[data-navbar]");
+      const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+      const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
-};
+      const toggleNavbar = function () {
+        console.log("Navbar toggled!");
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("nav-active");
+      };
 
-addEventOnElements(navTogglers, "click", toggleNavbar);
+      addEventOnElements(navTogglers, "click", toggleNavbar);
+    })
+    .catch((error) => console.error("Error including navbar:", error));
+});
 
-/**HEADER
- * active header when window scroll down to 100px
- */
-
+/* HEADER ACTIVE ON SCROLL */
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
@@ -36,8 +46,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-/**SLIDER */
-
+/* SLIDER */
 const sliders = document.querySelectorAll("[data-slider]");
 
 const initSlider = function (currentSlider) {
@@ -50,7 +59,9 @@ const initSlider = function (currentSlider) {
   let currentSlidePos = 0;
 
   const moveSliderItem = function () {
-    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+    if (sliderContainer.children.length > 0) {
+      sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+    }
   };
 
   const slideNext = function () {
@@ -96,48 +107,35 @@ for (let i = 0, len = sliders.length; i < len; i++) {
   initSlider(sliders[i]);
 }
 
-/**ACCORDION ABOUT SECTION */
+/* ACCORDION ABOUT SECTION */
+document.addEventListener("click", (e) => {
+  if (e.target.matches("[data-accordion-btn]")) {
+    const currentAccordion = e.target.closest("[data-accordion]");
+    const allAccordions = document.querySelectorAll("[data-accordion]");
 
-const accordions = document.querySelectorAll("[data-accordion]");
-
-let lastActiveAccordion = null;
-
-const initAccordion = function (currentAccordion) {
-  const accordionBtn = currentAccordion.querySelector("[data-accordion-btn]");
-
-  const expandAccordion = function () {
-    if (lastActiveAccordion && lastActiveAccordion !== currentAccordion) {
-      lastActiveAccordion.classList.remove("expanded");
-    }
+    allAccordions.forEach((accordion) => {
+      if (accordion !== currentAccordion) {
+        accordion.classList.remove("expanded");
+      }
+    });
 
     currentAccordion.classList.toggle("expanded");
+  }
+});
 
-    lastActiveAccordion = currentAccordion.classList.contains("expanded")
-      ? currentAccordion
-      : null;
-  };
-
-  accordionBtn.addEventListener("click", expandAccordion);
-};
-
-for (let i = 0, len = accordions.length; i < len; i++) {
-  initAccordion(accordions[i]);
-}
-
-/**COUNTDOWN ANIMATION FOR STATS */
-
+/* COUNTDOWN ANIMATION FOR STATS */
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("navbar.html")
+  fetch("footer.html")
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Failed to load navbar.html");
+        throw new Error("Failed to load footer.html");
       }
       return response.text();
     })
     .then((data) => {
-      document.querySelector("#navbar-placeholder").innerHTML = data;
+      document.querySelector("#footer-placeholder").innerHTML = data;
     })
-    .catch((error) => console.error("Error including navbar:", error));
+    .catch((error) => console.error("Error including footer:", error));
 
   const counters = document.querySelectorAll(".card-text .h1");
 
