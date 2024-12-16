@@ -289,10 +289,11 @@ body.nav-active {
 }
 
 .header.active {
-  background-color: var(--white);
+  background-color: #2e776f;
   position: fixed;
   animation: slideIn 0.5s ease forwards;
   opacity: 0.85;
+  color: var(--white);
 }
 
 @keyframes slideIn {
@@ -327,7 +328,7 @@ body.nav-active {
 }
 
 .header.active .nav-open-btn {
-  color: var(--charcoal);
+  color: var(--white);
 }
 
 .navbar {
@@ -762,26 +763,79 @@ body.nav-active {
   );
 }
 
-.stats-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  gap: 36px 24px;
-  padding: 45px 30px;
-  border-radius: var(--radius-8);
+/* Gradient background */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
-.stats-card .card-text > * {
-  color: var(--white);
-  text-shadow: .1em .1em 0 hsl(200 50% 30%);
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.stats-card .card-text .h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--white);
-  transition: color 0.3s ease-in-out;
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.stats .slider .slide img {
+  object-fit: contain; /* Ensures the image scales without distortion */
+  width: 100%; /* Fills the width of the slide */
+  height: 100%; /* Fills the height of the slide */
+}
+
+.stats .slider .slide {
+  height: 100px; /* Consistent height */
+  width: 160px; /* Consistent width */
+  margin-right: 10px; /* Adds spacing between slides */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the images within the slide */
+  box-sizing: border-box; /* Includes padding/borders in size calculations */
+}
+
+.stats .slider .slide-track {
+  display: flex; /* Keeps the slides in a row */
+  gap: 10px; /* Adds uniform spacing between slides */
+}
+
 
 /*-----------------------------------*\
   #PROJECT
@@ -1078,7 +1132,7 @@ Resonsive for larger than 992 px screen
   }
 
   .header.active .navbar-link {
-    color: var(--charcoal);
+    color: var(--white);
   }
 
   .header.active .navbar-link:is(:hover, :focus-visible) {
