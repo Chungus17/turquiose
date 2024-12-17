@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adex</title>
 
     <!--PRIMARY META TAGS-->
-    <meta name="tite" content="Adex">
-    <meta name="description" content="This is a business agency">
+    <meta name="tite" content="Adex" />
+    <meta name="description" content="This is a business agency" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--CSS FILE-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Font Awesome -->
     <script
@@ -26,767 +29,793 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--FLAG ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
     <!--Preload Images-->
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
-
-</head>
-<body>
-
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+  </head>
+  <body>
     <!----------------HEADER---------------->
     <header class="header" data-header>
-        <div id="navbar-placeholder"></div>
+      <div id="navbar-placeholder"></div>
     </header>
 
-
     <main>
-        <article>
+      <article>
 
-            <!----------HERO SECTION---------->
-            <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.svg');">
+        <!----------HERO SECTION---------->
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Experience the Wonder with
+                <span class="turquiose-text">Turquoise</span> Company.
+              </h1>
+              <p class="hero-text">
+                We deliver industry-leading engineering, logistics, and HR
+                solutions tailored to meet your needs.
+              </p>
 
-                <div class="container">
+              <div class="btn-wrapper">
+                <a href="#" class="btn btn-primary">Explore Now</a>
+                <a href="#" class="btn btn-outline">Contact Us</a>
+              </div>
+            </div>
 
-                    <div class="hero-content">
-
-                        <h1 class="h1 hero-title">Experience the Wonder with <span class="turquiose-text">Turquoise</span> Company.</h1>
-                        <p class="hero-text">We deliver industry-leading engineering, logistics, and HR solutions tailored to meet your needs.
-                        </p>
-
-                        <div class="btn-wrapper">
-                            <a href="#" class="btn btn-primary">Explore Now</a>
-                            <a href="#" class="btn btn-outline">Contact Us</a>
-                        </div>
-
-
-                    </div>
-
-                    <div class="hero-slider" data-slider>
-
-                        <div class="slider-inner">
-
-                            <ul class="slider-container" data-slider-container>
-                                <li class="slider-item">
-                                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                                        <img src="./assets/images/Engineering-hero-1.jpg" alt="hero banner" 
-                                        width="575" height="550" class="img-cover">
-                                    </figure>
-                                </li>
-
-                                <li class="slider-item">
-                                        <figure class="img-holder" style="--width: 575; --height: 550;">
-                                            <img src="./assets/images/engineering-hero-2.jpg" alt="hero banner" 
-                                            width="575" height="550" class="img-cover">
-                                        </figure>
-                                </li>
-
-                                <li class="slider-item">
-                                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                                        <img src="./assets/images/engineering-hero-3.jpg" alt="hero banner" 
-                                        width="575" height="550" class="img-cover">
-                                    </figure>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-                            <ion-icon name="arrow-back"></ion-icon>
-                        </button>
-
-                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-                            <ion-icon name="arrow-forward"></ion-icon>
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!--WHO ARE WE SECTION-->
-            <section class="section feature" aria-labelledby="feature label">
-
-                <div class="container">
-
-                    <figure class="feature-banner">
-                        <img src="./assets/images/who-are-we.svg" alt="feature banner" 
-                        class="w-100" width="800" height="531" loading="lazy">
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/Engineering-hero-1.jpg"
+                        alt="hero banner"
+                        width="575"
+                        height="550"
+                        class="img-cover"
+                      />
                     </figure>
+                  </li>
 
-                    <div class="feature-content">
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/engineering-hero-2.jpg"
+                        alt="hero banner"
+                        width="575"
+                        height="550"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
 
-                        <p class="section-subtitle" id="feature-label">Who Are We</p>
-
-                        <h2 class="h2 section-title">
-                            At Turquiose, we are committed to delivering top-tier engineering, logistics, and HR solutions                    </h2>
-
-                        <p class="section-text">
-                            The company's reputation is centered on its capability to
-                            provide high quality and professional HR solutions, most
-                            notably in the fields of Labor Contracting.
-                        </p>
-
-                        <p class="section-text">
-                            Whether the requirement is recruitment, sponsorship, training,
-                            logistics, management, or consultancy, Turquoise has the
-                            experience, vision and assets to get the job done.
-                        </p>
-
-                        <p class="section-text">
-                            Our mission is to establish ourselves as the leading provider of a
-                            Facilities Services, Constructions, Heavy Equipment Rental & Leasing,
-                            Maintenance, turn key HR solutions for Governmental Contracts,
-                            Commercial sectors, Oil & Gas, Refineries, Municipalities & International
-                            organizations.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-------------VALUES SECTION---------------->
-            <section class="values" aria-label="our values">
-                <div class="container">
-                    <p class="section-subtitle" id="values-label">Our values</p>
-                    <ul class="values-card">
-                        <li class="value">
-                            <span class="value-icon"><i class="fa-regular fa-handshake"></i></span>
-                            <span class="value-card-heading">COMMITMENT</span>
-                            <p class="values-section-text">We are involved in every step of the way. We will find a way to help you reach your goals no matter what obstacles are present.</p>
-                        </li>
-                        <li class="value">
-                            <span class="value-icon"><i class="fa-regular fa-lightbulb"></i></span>
-                            <span class="value-card-heading">INNOVATION</span>
-                            <p class="values-section-text">We embrace creativity and change, driving progress with innovative solutions.</p>
-                        </li>
-                        <li class="value">
-                            <span class="value-icon"><i class="fa-solid fa-scale-balanced"></i></span>
-                            <span class="value-card-heading">INTEGRITY</span>
-                            <p class="values-section-text">We uphold honesty and transparency, building trust through our commitment to integrity.</p>
-                        </li>
-                        <li class="value">
-                            <span class="value-icon"><i class="fa-solid fa-users-viewfinder"></i></span>
-                            <span class="value-card-heading">PEOPLE FOCUS</span>
-                            <p class="values-section-text">We prioritize people, creating an inclusive environment where everyone can thrive.</p>
-                        </li>
-                        <li class="value">
-                            <span class="value-icon"><i class="fa-solid fa-people-group"></i></span>
-                            <span class="value-card-heading">TEAM SPIRIT</span>
-                            <p class="values-section-text">We believe in collaboration, working together to achieve more and make a positive impact.</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-
-            <!----------SERVICE SECTION-------------> 
-            <section class="section service" aria-labelledby="service-label">
-
-                <div class="container">
-            
-                <p class="section-subtitle" id="service-label">Our Services</p>
-            
-                <h2 class="h2 section-title">
-                    We deliver tailored services to meet your business needs.
-                </h2>
-            
-                <ul class="grid-list">
-            
-                    <!-- Engineering and Contracting -->
-                    <li>
-                        <a href="service-details.html?service=engineering">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="hammer-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Engineering and Contracting</h3>
-                    
-                                <p class="card-text">
-                                Expertise in engineering and contracting services designed to support projects across various industries with precision and reliability.
-                                </p>
-
-                                <a href="service-details.html?service=equipment" class="btn-text">
-                                    <span class="span">Learn More</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
-                    <!-- Equipment Lease -->
-                    <li>
-                    <a href="service-details.html?service=equipment">
-                        <div class="service-card">
-            
-                            <div class="card-icon">
-                            <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
-                            </div>
-                
-                            <h3 class="h4 card-title">Equipment Lease</h3>
-                
-                            <p class="card-text">
-                            Reliable equipment leasing services, offering modern machinery to meet the needs of any project or industry.
-                            </p>
-                
-                            <a href="service-details.html?service=equipment" class="btn-text">
-                            <span class="span">Learn More</span>
-                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                            </a>
-                
-                        </div>
-                    </a>
-                    </li>
-            
-                    <!-- Logistics -->
-                    <li>
-                        <a href="service-details.html?service=logistics">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="car-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Logistics</h3>
-                    
-                                <p class="card-text">
-                                Streamlined logistics solutions for seamless transportation, workforce mobility, and supply chain efficiency.
-                                </p>
-                    
-                                <a href="service-details.html?service=logistics" class="btn-text">
-                                <span class="span">Learn More</span>
-                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
-                    <!-- Sponsorship -->
-                    <li>
-                        <a href="service-details.html?service=sponsorship">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Sponsorship</h3>
-                    
-                                <p class="card-text">
-                                Trusted sponsorship services for non-Kuwaiti companies, enabling seamless operations in Kuwait.
-                                </p>
-                    
-                                <a href="service-details.html?service=sponsorship" class="btn-text">
-                                <span class="span">Learn More</span>
-                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
-                    <!-- Human Resources -->
-                    <li>
-                        <a href="service-details.html?service=hr">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="people-circle-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Human Resources</h3>
-                    
-                                <p class="card-text">
-                                Comprehensive HR solutions, including recruitment, workforce management, and skill-building programs.
-                                </p>
-                    
-                                <a href="service-details.html?service=hr" class="btn-text">
-                                <span class="span">Learn More</span>
-                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
-                    <!-- Construction Works -->
-                    <li>
-                        <a href="service-details.html?service=construction">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="construct-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Construction Works</h3>
-                    
-                                <p class="card-text">
-                                Delivering exceptional construction solutions, ensuring quality, safety, and timely project execution across the GCC region.
-                                </p>
-                    
-                                <a href="service-details.html?service=construction" class="btn-text">
-                                <span class="span">Learn More</span>
-                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
-                    <!-- Search and Select Service -->
-                    <li>
-                    
-                        <a href="service-details.html?service=search-select">
-                            <div class="service-card">
-            
-                                <div class="card-icon">
-                                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-                                </div>
-                    
-                                <h3 class="h4 card-title">Search and Select Service</h3>
-                    
-                                <p class="card-text">
-                                Professional search and selection services to match you with the right talent for your business needs across industries.
-                                </p>
-                    
-                                <a href="service-details.html?service=search-select" class="btn-text">
-                                <span class="span">Learn More</span>
-                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                    
-                            </div>
-                        </a>
-                    </li>
-            
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/engineering-hero-3.jpg"
+                        alt="hero banner"
+                        width="575"
+                        height="550"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
                 </ul>
-                </div>
-            
-            </section>
-  
-              
-              
-            <!-------------ABOUT SECTION-------------->
-            <section class="section about" aria-labelledby="about-label">
+              </div>
 
-                <div class="container">
+              <button
+                class="slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
 
-                    <figure class="about-banner">
-                        <img src="./assets/images/about-banner.png" alt="about banner" 
-                        class="w-100" loading="lazy" width="800" height="580">
-                    </figure>
+              <button
+                class="slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
 
-                    <div class="about-content">
+        
+        <!--WHO ARE WE SECTION-->
+        <section class="section feature" aria-labelledby="feature label">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="./assets/images/who-are-we.svg"
+                alt="feature banner"
+                class="w-100"
+                width="800"
+                height="531"
+                loading="lazy"
+              />
+            </figure>
 
-                        <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+            <div class="feature-content">
+              <p class="section-subtitle" id="feature-label">Who Are We</p>
 
-                        <h2 class="h2 section-title">We bring solutions to make life easier for our clients.</h2>
+              <h2 class="h2 section-title">
+                At Turquiose, we are committed to delivering top-tier
+                engineering, logistics, and HR solutions
+              </h2>
 
-                        <ul>
+              <p class="section-text">
+                The company's reputation is centered on its capability to
+                provide high quality and professional HR solutions, most notably
+                in the fields of Labor Contracting.
+              </p>
 
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
+              <p class="section-text">
+                Whether the requirement is recruitment, sponsorship, training,
+                logistics, management, or consultancy, Turquoise has the
+                experience, vision and assets to get the job done.
+              </p>
 
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                                            <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                            <span class="span h5">Proven Expertise</span>
-                                        </button>
-                                    </h3>
+              <p class="section-text">
+                Our mission is to establish ourselves as the leading provider of
+                a Facilities Services, Constructions, Heavy Equipment Rental &
+                Leasing, Maintenance, turn key HR solutions for Governmental
+                Contracts, Commercial sectors, Oil & Gas, Refineries,
+                Municipalities & International organizations.
+              </p>
+            </div>
+          </div>
+        </section>
 
-                                    <p class="accordion-content">With over 7 years of experience, we deliver reliable and innovative solutions 
-                                        across engineering, logistics, and HR services in Kuwait and the GCC region.
-                                    </p>
 
-                                </div>
-                            </li>
+        <!-------------VALUES SECTION---------------->
+        <section class="values" aria-label="our values">
+          <div class="container">
+            <p class="section-subtitle" id="values-label">Our values</p>
+            <ul class="values-card">
+              <li class="value">
+                <span class="value-icon"
+                  ><i class="fa-regular fa-handshake"></i
+                ></span>
+                <span class="value-card-heading">COMMITMENT</span>
+                <p class="values-section-text">
+                  We are involved in every step of the way. We will find a way
+                  to help you reach your goals no matter what obstacles are
+                  present.
+                </p>
+              </li>
+              <li class="value">
+                <span class="value-icon"
+                  ><i class="fa-regular fa-lightbulb"></i
+                ></span>
+                <span class="value-card-heading">INNOVATION</span>
+                <p class="values-section-text">
+                  We embrace creativity and change, driving progress with
+                  innovative solutions.
+                </p>
+              </li>
+              <li class="value">
+                <span class="value-icon"
+                  ><i class="fa-solid fa-scale-balanced"></i
+                ></span>
+                <span class="value-card-heading">INTEGRITY</span>
+                <p class="values-section-text">
+                  We uphold honesty and transparency, building trust through our
+                  commitment to integrity.
+                </p>
+              </li>
+              <li class="value">
+                <span class="value-icon"
+                  ><i class="fa-solid fa-users-viewfinder"></i
+                ></span>
+                <span class="value-card-heading">PEOPLE FOCUS</span>
+                <p class="values-section-text">
+                  We prioritize people, creating an inclusive environment where
+                  everyone can thrive.
+                </p>
+              </li>
+              <li class="value">
+                <span class="value-icon"
+                  ><i class="fa-solid fa-people-group"></i
+                ></span>
+                <span class="value-card-heading">TEAM SPIRIT</span>
+                <p class="values-section-text">
+                  We believe in collaboration, working together to achieve more
+                  and make a positive impact.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
 
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                                            <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                            <span class="span h5">Comprehensive Services</span>
-                                        </button>
-                                    </h3>
+        <!----------SERVICE SECTION------------->
+        <section class="section service" aria-labelledby="service-label">
+          <div class="container">
+            <p class="section-subtitle" id="service-label">Our Services</p>
 
-                                    <p class="accordion-content">From contracting and construction works to manpower solutions and equipment 
-                                        leasing, we provide an all-in-one service tailored to meet your needs.
-                                    </p>
+            <h2 class="h2 section-title">
+              We deliver tailored services to meet your business needs.
+            </h2>
 
-                                </div>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                                            <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                            <span class="span h5">Strong Regional Presence</span>
-                                        </button>
-                                    </h3>
-
-                                    <p class="accordion-content">Serving clients across Kuwait and the GCC, we bring regional 
-                                        expertise and a deep understanding of the local market.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                                            <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                                            <span class="span h5">Client-Centric Approach</span>
-                                        </button>
-                                    </h3>
-
-                                    <p class="accordion-content">We prioritize our clients’ goals, ensuring timely delivery, 
-                                        top-quality services, and customized solutions to drive your success.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                        </ul>
-
+            <ul class="grid-list">
+              <!-- Engineering and Contracting -->
+              <li>
+                <a href="service-details.html?service=engineering">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="hammer-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
                     </div>
 
-                </div>
+                    <h3 class="h4 card-title">Engineering and Contracting</h3>
 
-            </section> 
+                    <p class="card-text">
+                      Expertise in engineering and contracting services designed
+                      to support projects across various industries with
+                      precision and reliability.
+                    </p>
 
+                    <a
+                      href="service-details.html?service=equipment"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
 
-            <!------------FEATURES SECTION------------->
-            <section class="section feature" aria-labelledby="feature label">
-
-                <div class="container">
-
-                    <figure class="feature-banner">
-                        <img src="./assets/images/feature-banner.png" alt="feature banner" 
-                        class="w-100" width="800" height="531" loading="lazy">
-                    </figure>
-
-                    <div class="feature-content">
-
-                        <p class="section-subtitle" id="feature-label">Our Solutions</p>
-
-                        <h2 class="h2 section-title">
-                            We make your spending stress-free for you to have the perfect control.
-                        </h2>
-
-                        <p class="section-text">
-                            Cum sociis natoque penatibus et magnis dis parturient montes, 
-                            nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, 
-                            egestas eget quam. Praesent commodo cursus.
-                        </p>
-
-                        <ul class="feature-list">
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                                        Aenean quam ornare. Curabitur blandit.
-                                    </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                                        Nullam quis risus eget urna mollis ornare.
-                                    </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                                        Etiam porta euismod malesuada mollis.
-                                    </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                                        Vivamus sagittis lacus vel augue rutrum.
-                                    </span>
-
-                                </div>
-                            </li>
-
-                        </ul>
-
+              <!-- Equipment Lease -->
+              <li>
+                <a href="service-details.html?service=equipment">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="cube-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
                     </div>
 
-                </div>
+                    <h3 class="h4 card-title">Equipment Lease</h3>
 
-            </section>
+                    <p class="card-text">
+                      Reliable equipment leasing services, offering modern
+                      machinery to meet the needs of any project or industry.
+                    </p>
 
+                    <a
+                      href="service-details.html?service=equipment"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
 
-            <!-------------STATS SECTION---------------->
-            <section class="stats" aria-label="our stats">
-                <div class="container">
-                    <div class="slider">
-                        <div class="slide-track">
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cengizInsaat-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cggc-logo.png" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/kskGrup-logo.jpg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/limak-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cengizInsaat-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cggc-logo.png" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/kskGrup-logo.jpg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/limak-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cengizInsaat-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cggc-logo.png" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/kskGrup-logo.jpg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/limak-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cengizInsaat-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/cggc-logo.png" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/kskGrup-logo.jpg" height="100" width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="./assets/images/Clients/limak-logo.svg" height="100" width="250" alt="" />
-                            </div>
-                        </div>
+              <!-- Logistics -->
+              <li>
+                <a href="service-details.html?service=logistics">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="car-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
                     </div>
+
+                    <h3 class="h4 card-title">Logistics</h3>
+
+                    <p class="card-text">
+                      Streamlined logistics solutions for seamless
+                      transportation, workforce mobility, and supply chain
+                      efficiency.
+                    </p>
+
+                    <a
+                      href="service-details.html?service=logistics"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Sponsorship -->
+              <li>
+                <a href="service-details.html?service=sponsorship">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="business-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <h3 class="h4 card-title">Sponsorship</h3>
+
+                    <p class="card-text">
+                      Trusted sponsorship services for non-Kuwaiti companies,
+                      enabling seamless operations in Kuwait.
+                    </p>
+
+                    <a
+                      href="service-details.html?service=sponsorship"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Human Resources -->
+              <li>
+                <a href="service-details.html?service=hr">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="people-circle-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <h3 class="h4 card-title">Human Resources</h3>
+
+                    <p class="card-text">
+                      Comprehensive HR solutions, including recruitment,
+                      workforce management, and skill-building programs.
+                    </p>
+
+                    <a href="service-details.html?service=hr" class="btn-text">
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Construction Works -->
+              <li>
+                <a href="service-details.html?service=construction">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="construct-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <h3 class="h4 card-title">Construction Works</h3>
+
+                    <p class="card-text">
+                      Delivering exceptional construction solutions, ensuring
+                      quality, safety, and timely project execution across the
+                      GCC region.
+                    </p>
+
+                    <a
+                      href="service-details.html?service=construction"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Search and Select Service -->
+              <li>
+                <a href="service-details.html?service=search-select">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon
+                        name="search-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <h3 class="h4 card-title">Search and Select Service</h3>
+
+                    <p class="card-text">
+                      Professional search and selection services to match you
+                      with the right talent for your business needs across
+                      industries.
+                    </p>
+
+                    <a
+                      href="service-details.html?service=search-select"
+                      class="btn-text"
+                    >
+                      <span class="span">Learn More</span>
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+        <!-------------ABOUT SECTION-------------->
+        <section class="section about" aria-labelledby="about-label">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                alt="about banner"
+                class="w-100"
+                loading="lazy"
+                width="800"
+                height="580"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+              <h2 class="h2 section-title">
+                We bring solutions to make life easier for our clients.
+              </h2>
+
+              <ul>
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+                        <span class="span h5" data-accordion-btn>Proven Expertise</span>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      With over 7 years of experience, we deliver reliable and
+                      innovative solutions across engineering, logistics, and HR
+                      services in Kuwait and the GCC region.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+                        <span class="span h5" data-accordion-btn>Comprehensive Services</span>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      From contracting and construction works to manpower
+                      solutions and equipment leasing, we provide an all-in-one
+                      service tailored to meet your needs.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+                        <span class="span h5" data-accordion-btn>Strong Regional Presence</span>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Serving clients across Kuwait and the GCC, we bring
+                      regional expertise and a deep understanding of the local
+                      market.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+                        <span class="span h5" data-accordion-btn>Client-Centric Approach</span>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      We prioritize our clients’ goals, ensuring timely
+                      delivery, top-quality services, and customized solutions
+                      to drive your success.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <!-------------OUR REGIONAL PRESENCE SECTION-------------->
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <p class="section-subtitle" id="project-label">
+              Our Regional Presence
+            </p>
+
+            <h2 class="h2 section-title">
+              Strategically Positioned Across Key Regions
+            </h2>
+
+            <ul class="grid-list">
+              <!-- Kuwait -->
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/kuwait-city.jpg"
+                      alt="Kuwait"
+                      class="img-cover"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                    />
+                  </figure>
+                  
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"><span class="flag-icon flag-icon-kw"></span> Kuwait</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Our headquarters and main operations hub, driving growth
+                      and excellence across the GCC region.
+                    </p>
+                  </div>
                 </div>
-            </section>
-            
+              </li>
 
-            <!-------------PROJECTS SECTION-------------->
-            <section class="section project" aria-labelledby="project-label">
+              <!-- Qatar -->
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/qatar-city.jpg"
+                      alt="Qatar"
+                      class="img-cover"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <div class="container">
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"><span class="flag-icon flag-icon-qa"></span> Qatar</a>
+                    </h3>
 
-                    <p class="section-subtitle" id="project-label">Case Studies</p>
-
-                    <h2 class="h2 section-title">
-                        Check out some of our awesome projects with creative ideas and great design.
-                    </h2>
-
-                    <ul class="grid-list">
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: ; --height: ;">
-                                    <img src="./assets/images/blog-1.jpg" alt="Ligula tristique quis risus" 
-                                    class="img-cover" width="560" height="350" loading="lazy">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Ligula tristique quis risus</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        Mauris convallis non ligula non interdum. 
-                                        Gravida vulputate convallis tempus vestibulum cras 
-                                        imperdiet nun eu dolor.
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                            <time datetime="2022-04-14" class="meta-text">14 Apr 2022</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                            <span class="meta-text">Coding</time>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: ; --height: ;">
-                                    <img src="./assets/images/blog-2.jpg" alt="Nullam id dolor elit id nibh" 
-                                    class="img-cover" width="560" height="350" loading="lazy">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Nullam id dolor elit id nibh</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        Mauris convallis non ligula non interdum. 
-                                        Gravida vulputate convallis tempus vestibulum cras 
-                                        imperdiet nun eu dolor.
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                            <time datetime="2022-03-29" class="meta-text">29 Mar 2022</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                            <span class="meta-text">Workspace</time>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: ; --height: ;">
-                                    <img src="./assets/images/blog-3.jpg" alt="Ultricies fusce porta elit" 
-                                    class="img-cover" width="560" height="350" loading="lazy">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Ultricies fusce porta elit</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        Mauris convallis non ligula non interdum. 
-                                        Gravida vulputate convallis tempus vestibulum cras 
-                                        imperdiet nun eu dolor.
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-                                            <time datetime="2022-02-26" class="meta-text">26 Feb 2022</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-                                            <span class="meta-text">Meeting</time>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
+                    <p class="card-text">
+                      Delivering innovative solutions tailored to the needs of
+                      our clients in Qatar's thriving market.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-            </section>
+              <!-- Turkey -->
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/istanbul-city.jpg"
+                      alt="Turkey"
+                      class="img-cover"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                    />
+                  </figure>
 
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"><span class="flag-icon flag-icon-tr"></span> Turkey</a>
+                    </h3>
 
-            <!----------------CTA SECTION---------------->
-            <section class="cta" aria-labelledby="call to action">
-                <div class="container">
-
-                    <h2 class="h2 section-title">
-                        Join our community by using our services and grow your business.
-                    </h2>
-
-                    <a href="#" class="btn btn-primary">Try It For Free</a>
-
+                    <p class="card-text">
+                      Expanding into Europe with cutting-edge services and
+                      expertise to support international projects.
+                    </p>
+                  </div>
                 </div>
-            </section>
+              </li>
+            </ul>
+          </div>
+        </section>
 
 
-            <!------------------FOOTER-------------------->
-            <div id="footer-placeholder"></div>
+        <!-------------OUR CLIENTS SECTION-------------->
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <p class="section-subtitle" id="project-label">Our Clients</p>
+
+            <h2 class="h2 section-title">
+              Trusted by Leading Companies Worldwide
+            </h2>
+
+            <!-- Sliding Carousel -->
+            <div class="wrapper">
+              <div class="slider">
+                <div class="slide-track">
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/cengizInsaat-logo.svg"
+                      height="100"
+                      width="250"
+                      alt="Cengiz Insaat"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/cggc-logo.png"
+                      height="100"
+                      width="250"
+                      alt="CGGC"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/kskGrup-logo.jpg"
+                      height="100"
+                      width="250"
+                      alt="KSK Grup"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/limak-logo.svg"
+                      height="100"
+                      width="250"
+                      alt="Limak"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/cengizInsaat-logo.svg"
+                      height="100"
+                      width="250"
+                      alt="Cengiz Insaat"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/cggc-logo.png"
+                      height="100"
+                      width="250"
+                      alt="CGGC"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/kskGrup-logo.jpg"
+                      height="100"
+                      width="250"
+                      alt="KSK Grup"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="./assets/images/Clients/limak-logo.svg"
+                      height="100"
+                      width="250"
+                      alt="Limak"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
-        </article>
+        <!----------------CTA SECTION---------------->
+        <section class="cta" aria-labelledby="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Join our community by using our services and grow your business.
+            </h2>
+
+            <a href="#" class="btn btn-primary">Try It For Free</a>
+          </div>
+        </section>
+
+
+        <!------------------FOOTER-------------------->
+        <div id="footer-placeholder"></div>
+      </article>
     </main>
-
-
-
 
     <!--Custom JAVASCRIPT Link-->
     <script src="./assets/js/script.js"></script>
 
     <!--IONICON-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-    
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
