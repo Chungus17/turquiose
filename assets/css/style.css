@@ -884,35 +884,11 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
-.cta {
-  background-color: var(--charcoal);
-}
-
-.cta .container {
-  padding-block: 100px 60px;
-  border-block-end: 1px solid var(--cadet-blue-crayola_a20);
-}
-
-.cta .section-title {
-  color: var(--white);
-  margin-block-end: 30px;
-}
-
-.cta .btn {
-  background-color: var(--violet-blue-crayola);
-  color: var(--white);
-  border: none;
-}
-
-/*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--charcoal);
+  background-color: var(--secondary-color);
   padding-block: 60px 100px;
   color: var(--light-gray);
 }
@@ -1191,7 +1167,7 @@ Resonsive for larger than 992 px screen
   FOOTER
   */
   .footer .grid-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .values-card {

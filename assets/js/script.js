@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
       addEventOnElements(navTogglers, "click", toggleNavbar);
     })
     .catch((error) => console.error("Error including navbar:", error));
+
+    feather.replace();
 });
 
 /* HEADER ACTIVE ON SCROLL */
