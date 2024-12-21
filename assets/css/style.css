@@ -947,6 +947,26 @@ body.nav-active {
   font-weight: var(--fw-700);
 }
 
+.footer-brand,
+.footer-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Align text in the center */
+}
+
+
+.footer-text,
+.footer-link,
+address {
+    text-align: center; /* Ensure text is centered */
+    margin: 0; /* Remove default margin */
+}
+
+address {
+    font-style: normal; /* Remove italic styling if unwanted */
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
