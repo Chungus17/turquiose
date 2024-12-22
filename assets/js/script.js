@@ -9,6 +9,24 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 /* NAVBAR TOGGLE FOR MOBILE */
 document.addEventListener("DOMContentLoaded", () => {
+
+  const section = document.querySelector(".feature");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          section.classList.remove("hidden");
+          section.classList.add("animate__animated", "animate__fadeIn");
+          observer.unobserve(entry.target); // Stop observing once visible
+        }
+      });
+    },
+    { threshold: 0.5 } // Adjust the threshold if needed
+  );
+
+  observer.observe(section);
+
   fetch("navbar.html")
     .then((response) => {
       if (!response.ok) {
@@ -34,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error including navbar:", error));
 
-    feather.replace();
+    // feather.replace();
 });
 
 /* HEADER ACTIVE ON SCROLL */

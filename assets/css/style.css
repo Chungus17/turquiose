@@ -1313,3 +1313,14 @@ Resonsive for larger than 1400 px screen
     height: 30px; /* Smaller height for phones */
   }
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-50px); /* Slide in from the left */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

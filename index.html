@@ -29,8 +29,17 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--ANIMATE-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!--FLAG ICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
 
     <!--Preload Images-->
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
@@ -54,7 +63,7 @@
           style="background-image: url('./assets/images/hero-bg.svg')"
         >
           <div class="container">
-            <div class="hero-content">
+            <div class="hero-content animate__animated animate__slideInLeft">
               <h1 class="h1 hero-title">
                 Experience the Wonder with
                 <span class="turquiose-text">Turquoise</span> Company.
@@ -70,7 +79,7 @@
               </div>
             </div>
 
-            <div class="hero-slider" data-slider>
+            <div class="hero-slider animate__animated animate__slideInRight" data-slider>
               <div class="slider-inner">
                 <ul class="slider-container" data-slider-container>
                   <li class="slider-item">
@@ -141,9 +150,8 @@
           </div>
         </section>
 
-        
         <!--WHO ARE WE SECTION-->
-        <section class="section feature" aria-labelledby="feature label">
+        <section class="section feature hidden" aria-labelledby="feature label" id="whoAreWe">
           <div class="container">
             <figure class="feature-banner">
               <img
@@ -186,7 +194,6 @@
             </div>
           </div>
         </section>
-
 
         <!-------------VALUES SECTION---------------->
         <section class="values" aria-label="our values">
@@ -248,9 +255,8 @@
           </div>
         </section>
 
-
         <!----------SERVICE SECTION------------->
-        <section class="section service" aria-labelledby="service-label">
+        <section class="section service" aria-labelledby="service-label" id="services">
           <div class="container">
             <p class="section-subtitle" id="service-label">Our Services</p>
 
@@ -487,9 +493,8 @@
           </div>
         </section>
 
-
         <!-------------ABOUT SECTION-------------->
-        <section class="section about" aria-labelledby="about-label">
+        <section class="section about" aria-labelledby="about-label" id="whyUs">
           <div class="container">
             <figure class="about-banner">
               <img
@@ -519,7 +524,9 @@
                           aria-hidden="true"
                           class="down"
                         ></ion-icon>
-                        <span class="span h5" data-accordion-btn>Proven Expertise</span>
+                        <span class="span h5" data-accordion-btn
+                          >Proven Expertise</span
+                        >
                       </button>
                     </h3>
 
@@ -540,7 +547,9 @@
                           aria-hidden="true"
                           class="down"
                         ></ion-icon>
-                        <span class="span h5" data-accordion-btn>Comprehensive Services</span>
+                        <span class="span h5" data-accordion-btn
+                          >Comprehensive Services</span
+                        >
                       </button>
                     </h3>
 
@@ -561,7 +570,9 @@
                           aria-hidden="true"
                           class="down"
                         ></ion-icon>
-                        <span class="span h5" data-accordion-btn>Strong Regional Presence</span>
+                        <span class="span h5" data-accordion-btn
+                          >Strong Regional Presence</span
+                        >
                       </button>
                     </h3>
 
@@ -582,7 +593,9 @@
                           aria-hidden="true"
                           class="down"
                         ></ion-icon>
-                        <span class="span h5" data-accordion-btn>Client-Centric Approach</span>
+                        <span class="span h5" data-accordion-btn
+                          >Client-Centric Approach</span
+                        >
                       </button>
                     </h3>
 
@@ -597,7 +610,6 @@
             </div>
           </div>
         </section>
-
 
         <!-------------OUR REGIONAL PRESENCE SECTION-------------->
         <section class="section project" aria-labelledby="project-label">
@@ -627,11 +639,12 @@
                       loading="lazy"
                     />
                   </figure>
-                  
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title"><span class="flag-icon flag-icon-kw"></span> Kuwait</a>
+                      <a href="#" class="card-title"
+                        ><span class="flag-icon flag-icon-kw"></span> Kuwait</a
+                      >
                     </h3>
 
                     <p class="card-text">
@@ -661,7 +674,9 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title"><span class="flag-icon flag-icon-qa"></span> Qatar</a>
+                      <a href="#" class="card-title"
+                        ><span class="flag-icon flag-icon-qa"></span> Qatar</a
+                      >
                     </h3>
 
                     <p class="card-text">
@@ -691,7 +706,9 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title"><span class="flag-icon flag-icon-tr"></span> Turkey</a>
+                      <a href="#" class="card-title"
+                        ><span class="flag-icon flag-icon-tr"></span> Turkey</a
+                      >
                     </h3>
 
                     <p class="card-text">
@@ -705,9 +722,8 @@
           </div>
         </section>
 
-
         <!-------------OUR CLIENTS SECTION-------------->
-        <section class="section project" aria-labelledby="project-label">
+        <section class="section project" aria-labelledby="project-label" id="clients">
           <div class="container">
             <p class="section-subtitle" id="project-label">Our Clients</p>
 
@@ -833,7 +849,6 @@
           </div>
         </section>
 
-
         <!-- --------------CTA SECTION--------------
         <section class="cta" aria-labelledby="call to action">
           <div class="container">
@@ -844,7 +859,6 @@
             <a href="#" class="btn btn-primary">Try It For Free</a>
           </div>
         </section> -->
-
 
         <!------------------FOOTER-------------------->
         <div id="footer-placeholder"></div>
