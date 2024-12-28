@@ -23,9 +23,9 @@ const serviceData = {
     title: "Reliable Equipment Leasing Services",
     text: "Offering a wide range of modern equipment for lease, ensuring projects are completed efficiently and on time.",
     images: [
-      "./assets/images/services/hero/Equipment-hero-1.jpg",
-      "./assets/images/services/hero/Equipment-hero-2.jpg",
-      "./assets/images/services/hero/Equipment-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "Equipment Leasing",
@@ -43,9 +43,9 @@ const serviceData = {
     title: "Seamless Logistics, Endless Possibilities",
     text: "Optimized logistics solutions for seamless transportation and workforce mobility.",
     images: [
-      "./assets/images/services/hero/Logistics-hero-1.jpg",
-      "./assets/images/services/hero/Logistics-hero-2.jpg",
-      "./assets/images/services/hero/Logistics-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "Logistics",
@@ -63,9 +63,9 @@ const serviceData = {
     title: "Trusted Sponsorship Services",
     text: "Providing sponsorship solutions that enable businesses to operate smoothly in Kuwait and the GCC.",
     images: [
-      "./assets/images/services/hero/Sponsorship-hero-1.jpg",
-      "./assets/images/services/hero/Sponsorship-hero-2.jpg",
-      "./assets/images/services/hero/Sponsorship-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "Sponsorship",
@@ -83,9 +83,9 @@ const serviceData = {
     title: "Comprehensive Human Resource Solutions",
     text: "Specialized HR services, including recruitment, workforce management, and skill-building programs tailored to your needs.",
     images: [
-      "./assets/images/services/hero/HR-hero-1.jpg",
-      "./assets/images/services/hero/HR-hero-2.jpg",
-      "./assets/images/services/hero/HR-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "HR Solutions",
@@ -103,9 +103,9 @@ const serviceData = {
     title: "Building Dreams with Construction Expertise",
     text: "Delivering exceptional construction solutions with a focus on quality, safety, and timely execution.",
     images: [
-      "./assets/images/services/hero/Construction-hero-1.jpg",
-      "./assets/images/services/hero/Construction-hero-2.jpg",
-      "./assets/images/services/hero/Construction-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "Construction Excellence",
@@ -123,9 +123,9 @@ const serviceData = {
     title: "Search and Selection",
     text: "Professional search and selection services to connect you with top talent and resources across industries.",
     images: [
-      "./assets/images/services/hero/SearchSelect-hero-1.jpg",
-      "./assets/images/services/hero/SearchSelect-hero-2.jpg",
-      "./assets/images/services/hero/SearchSelect-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero-1.jpg",
+      "./assets/images/services/hero/engineering-hero-2.jpg",
+      "./assets/images/services/hero/engineering-hero-3.jpg",
     ],
     features: {
       subtitle: "Tailored Recruitment",
