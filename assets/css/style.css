@@ -1334,6 +1334,10 @@ Resonsive for larger than 1200 px screen
     width: 30%;
     margin: auto;
   }
+
+  #values-label {
+    text-align: center;
+  }
 }
 
 /*
