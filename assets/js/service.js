@@ -3,9 +3,7 @@ const serviceData = {
     title: "Empowering Projects with Engineering Excellence",
     text: "Delivering innovative and reliable engineering and contracting solutions to meet the demands of modern infrastructure and development.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Engineering-hero.svg",
     ],
     features: {
       subtitle: "Engineering Excellence",
@@ -23,9 +21,7 @@ const serviceData = {
     title: "Reliable Equipment Leasing Services",
     text: "Offering a wide range of modern equipment for lease, ensuring projects are completed efficiently and on time.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Equipment-hero.svg",
     ],
     features: {
       subtitle: "Equipment Leasing",
@@ -43,9 +39,7 @@ const serviceData = {
     title: "Seamless Logistics, Endless Possibilities",
     text: "Optimized logistics solutions for seamless transportation and workforce mobility.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Logistics-hero.svg",
     ],
     features: {
       subtitle: "Logistics",
@@ -63,9 +57,7 @@ const serviceData = {
     title: "Trusted Sponsorship Services",
     text: "Providing sponsorship solutions that enable businesses to operate smoothly in Kuwait and the GCC.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Sponsorship-hero.svg",
     ],
     features: {
       subtitle: "Sponsorship",
@@ -83,9 +75,7 @@ const serviceData = {
     title: "Comprehensive Human Resource Solutions",
     text: "Specialized HR services, including recruitment, workforce management, and skill-building programs tailored to your needs.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/HR-hero.svg",
     ],
     features: {
       subtitle: "HR Solutions",
@@ -103,9 +93,7 @@ const serviceData = {
     title: "Building Dreams with Construction Expertise",
     text: "Delivering exceptional construction solutions with a focus on quality, safety, and timely execution.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Construction-hero.svg",
     ],
     features: {
       subtitle: "Construction Excellence",
@@ -123,9 +111,7 @@ const serviceData = {
     title: "Search and Selection",
     text: "Professional search and selection services to connect you with top talent and resources across industries.",
     images: [
-      "./assets/images/services/hero/Engineering-hero-1.jpg",
-      "./assets/images/services/hero/engineering-hero-2.jpg",
-      "./assets/images/services/hero/engineering-hero-3.jpg",
+      "./assets/images/services/hero/Searchselect-hero.svg",
     ],
     features: {
       subtitle: "Tailored Recruitment",
@@ -165,14 +151,14 @@ function updateHeroSection(service) {
 
     const figure = document.createElement("figure");
     figure.classList.add("img-holder");
-    figure.style.setProperty("--width", "575");
-    figure.style.setProperty("--height", "550");
+    figure.style.setProperty("--width", "500");
+    figure.style.setProperty("--height", "475");
 
     const img = document.createElement("img");
     img.src = image;
     img.alt = "Hero Banner";
-    img.width = 575;
-    img.height = 550;
+    img.width = 500;
+    img.height = 475;
     img.classList.add("img-cover");
 
     figure.appendChild(img);
