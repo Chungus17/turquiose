@@ -1296,7 +1296,7 @@ Resonsive for larger than 1200 px screen
   SERVICES
   */
   .service .grid-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /*
@@ -1362,7 +1362,7 @@ Resonsive for larger than 1400 px screen
   SERVICES
   */
   .service .grid-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /*

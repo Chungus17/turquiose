@@ -2,128 +2,122 @@ const serviceData = {
   engineering: {
     title: "Empowering Projects with Engineering Excellence",
     text: "Delivering innovative and reliable engineering and contracting solutions to meet the demands of modern infrastructure and development.",
-    images: [
-      "./assets/images/services/hero/Engineering-hero.svg",
-    ],
+    images: ["./assets/images/services/hero/Engineering-hero.svg"],
     features: {
       subtitle: "Engineering Excellence",
       title: "Why Choose Our Engineering Services",
       text: "Our engineering services combine innovation, reliability, and expertise to deliver high-quality solutions for modern infrastructure projects. With state-of-the-art equipment and an experienced team, we ensure your project's success.",
     },
-    details: [
-      "Structural analysis and design for complex projects.",
-      "End-to-end project management for seamless execution.",
-      "Cutting-edge technology to optimize construction processes.",
-      "Focus on sustainability and environmental impact.",
-    ],
+    details: {
+      "Construction and Maintenance Services":
+        "Construction projects including design, detail engineering, installation, and maintenance. Construction, renovation, and maintenance for electromechanical systems, instrumentation, and control systems. Industrial and multistoried building services (Electrical, HVAC, and Plumbing).",
+      "Power and Electrical Works":
+        "Supply and installation of cables including LV and HV along with civil work. Supply, installation, and maintenance of all types of pumps along with related works. Supply and installation of motor control centers (MCC) for industrial projects and power stations.",
+      "Lighting and Telecommunication Systems":
+        "Supply and installation of all types of street lighting equipment, highway lighting, station, and sports lighting. Supply and installation of telecommunication systems (telephone exchanges, fiber optic cables).",
+      "Specialized Drilling and Automation":
+        "Thrust boring and directional boring under paved roads for laying services (cables, water, gas, etc.). Automation systems in collaboration with Siemens.",
+      "Fire Safety and Security Solutions":
+        "Supply, installation, and maintenance of fire alarm systems, firefighting systems, security systems, and cathodic protection.",
+    },
   },
   equipment: {
     title: "Reliable Equipment Leasing Services",
     text: "Offering a wide range of modern equipment for lease, ensuring projects are completed efficiently and on time.",
-    images: [
-      "./assets/images/services/hero/Equipment-hero.svg",
-    ],
+    images: ["./assets/images/services/hero/Equipment-hero.svg"],
     features: {
       subtitle: "Equipment Leasing",
       title: "Maximize Efficiency with Our Equipment Services",
       text: "We provide access to state-of-the-art equipment, ensuring your projects are executed with precision and reliability. Our flexible leasing terms cater to your specific project needs.",
     },
-    details: [
-      "Wide range of equipment for construction and industrial use.",
-      "Flexible leasing plans tailored to project timelines.",
-      "Regular maintenance and support to minimize downtime.",
-      "Expert guidance on selecting the right tools for the job.",
-    ],
+    details: {
+      "Equipment Rental Services":
+        "We offer a wide range of new and used equipment for rent to serve different industries. All equipment is well-maintained and ready to work. We provide customized leasing programs to fit any project’s needs. All lease contracts are supported by mobile workshops in addition to our main garage.",
+      "Heavy Machinery and Earthmoving Equipment":
+        "Excavators, dozers, wheel loaders, backhoe loaders, skid steer loaders, and graders.",
+      "Cranes and Lifting Equipment":
+        "Mobile cranes, truck-mounted cranes, forklifts, spider lifts, and reach stackers.",
+      "Transportation and Tanker Vehicles":
+        "Water tankers, sewage tankers, fuel tankers, dump trucks, and half lorries.",
+      "Compactors and Specialized Equipment":
+        "Garbage compactors, road sweepers, aerial lifts, man lifts, scissor lifts, and low-beds.",
+    },
   },
   logistics: {
     title: "Seamless Logistics, Endless Possibilities",
     text: "Optimized logistics solutions for seamless transportation and workforce mobility.",
-    images: [
-      "./assets/images/services/hero/Logistics-hero.svg",
-    ],
+    images: ["./assets/images/services/hero/Logistics-hero.svg"],
     features: {
       subtitle: "Logistics",
       title: "Streamline Operations with Our Logistics Solutions",
       text: "Our logistics services ensure timely and cost-effective transportation solutions, minimizing downtime and maximizing productivity for your projects.",
     },
-    details: [
-      "Timely transportation of goods and equipment.",
-      "Optimized routes to save time and reduce costs.",
-      "Scalable solutions for projects of any size.",
-      "Dedicated customer support for logistics queries.",
-    ],
+    details: {
+      "Professional Driver Services":
+        "We provide professional and courteous driver services with years of experience. Our services are ideal for restaurants, hotels, private events, and special occasions. All attendants are highly polite to ensure a VIP experience for our clientele.",
+      "Workforce Transportation Services":
+        "We assist companies and projects by transporting their workforce between worksites and accommodations.",
+    },
   },
   sponsorship: {
     title: "Trusted Sponsorship Services",
     text: "Providing sponsorship solutions that enable businesses to operate smoothly in Kuwait and the GCC.",
-    images: [
-      "./assets/images/services/hero/Sponsorship-hero.svg",
-    ],
+    images: ["./assets/images/services/hero/Sponsorship-hero.svg"],
     features: {
       subtitle: "Sponsorship",
       title: "Secure Growth with Our Sponsorship Services",
       text: "We offer comprehensive sponsorship solutions that enable businesses to navigate local regulations and thrive in competitive markets.",
     },
-    details: [
-      "Assistance with regulatory compliance.",
-      "Expertise in navigating GCC business landscapes.",
-      "Facilitating smooth business operations.",
-      "Support for both short-term and long-term projects.",
-    ],
+    details: {
+      "Legal Sponsorship and Business Support":
+        "Turquoise enables non-Kuwaiti companies to operate legally in Kuwait by providing consultancy and legal standing. We offer legal support, advice, and assistance with procurement.",
+      "Workforce and Personnel Services":
+        "Assistance with visas (commercial and residential) and manpower support. Support for transiting personnel and vehicles.",
+      "Office and Infrastructure Support":
+        "Provision of office space, equipment, and communication lines.",
+      "Accommodation and Logistics":
+        "Life support services, housing, and other essential facilities.",
+    },
   },
   hr: {
     title: "Comprehensive Human Resource Solutions",
     text: "Specialized HR services, including recruitment, workforce management, and skill-building programs tailored to your needs.",
-    images: [
-      "./assets/images/services/hero/HR-hero.svg",
-    ],
+    images: ["./assets/images/services/hero/HR-hero.svg"],
     features: {
       subtitle: "HR Solutions",
       title: "Enhance Workforce Potential with Our HR Services",
       text: "Our HR services are tailored to optimize workforce performance, offering recruitment, training, and management solutions that meet your organizational goals.",
     },
-    details: [
-      "Talent acquisition and onboarding support.",
-      "Custom training programs to enhance workforce skills.",
-      "Effective workforce management strategies.",
-      "Legal compliance and employee documentation handling.",
-    ],
-  },
-  construction: {
-    title: "Building Dreams with Construction Expertise",
-    text: "Delivering exceptional construction solutions with a focus on quality, safety, and timely execution.",
-    images: [
-      "./assets/images/services/hero/Construction-hero.svg",
-    ],
-    features: {
-      subtitle: "Construction Excellence",
-      title: "Achieve Your Vision with Our Construction Services",
-      text: "We deliver top-notch construction services that emphasize quality, safety, and timely completion, making your vision a reality.",
+    details: {
+      "Workforce Solutions":
+        "Permanent recruitment, temporary staffing, contract staffing (outstaffing), and outsourcing. HR, labor safety, and labor legislation consulting.",
+      "Skilled and General Labor":
+        "Engineers, technicians, laborers, rig operators, welders, carpenters, pipe fitters, construction workers, crane operators, and warehouse personnel.",
+      "Technical and Maintenance Roles":
+        "Diesel and petrol mechanics, MHE operators, generator mechanics, HVAC technicians, and electricians.",
+      "Office and Administrative Support":
+        "System administrators, IT specialists, administrative assistants, clerks, secretaries, office support, and retail staff.",
+      "Professional Development and Specialized Services":
+        "Professional skill testing, executive search & selection, outplacement services, and skill-building programs.",
     },
-    details: [
-      "Comprehensive planning and project execution.",
-      "Strict adherence to safety and quality standards.",
-      "On-time delivery of projects without compromise.",
-      "Use of modern techniques and eco-friendly practices.",
-    ],
   },
-  searchselect: {
-    title: "Search and Selection",
-    text: "Professional search and selection services to connect you with top talent and resources across industries.",
-    images: [
-      "./assets/images/services/hero/Searchselect-hero.svg",
-    ],
+  import_export: {
+    title: "Global Trade Solutions for Your Business",
+    text: "Providing seamless import and export services with high-quality materials and efficient logistics to support various industries.",
+    images: ["./assets/images/services/hero/importExport-hero.svg"],
     features: {
-      subtitle: "Tailored Recruitment",
-      title: "Discover Top Talent with Our Search and Select Service",
-      text: "Our search and selection service connects you with highly skilled professionals, tailored to meet your industry's unique demands.",
+      subtitle: "Reliable Import & Export Services",
+      title: "Why Choose Our Import & Export Services",
+      text: "We specialize in sourcing, supplying, and delivering premium materials with a strong global network and expertise in international trade. Our efficient logistics ensure timely and cost-effective solutions for businesses of all sizes.",
     },
-    details: [
-      "Targeted recruitment for niche roles.",
-      "Access to a vast network of skilled professionals.",
-      "Thorough screening and evaluation process.",
-      "Custom solutions for industry-specific hiring challenges.",
-    ],
+    details: {
+      "Steel and Aluminum Products":
+        "Import and export of high-quality steel and aluminum products, catering to construction, manufacturing, and industrial sectors.",
+      "Industrial Raw Materials":
+        "Supply of essential industrial materials such as Ferro Silicon (FeSi), Baryte Powder, and Calcium Carbonate Powder for various manufacturing and processing industries.",
+      "Construction Material Supply":
+        "Sourcing and distribution of top-grade construction materials, ensuring durability and compliance with industry standards.",
+    },
   },
 };
 
@@ -182,39 +176,58 @@ function updateFeaturesSection(service) {
 }
 
 function updateProjectSection(service) {
-  // Get the selected service data
   const data = serviceData[service];
 
-  // Find the existing elements in the HTML
-  const titleElement = document.querySelector("#projectDetails .section-title");
-  const descriptionElement = document.querySelector(
-    "#projectDetails .section-description"
-  );
-  const detailsListElement = document.querySelector(
-    "#projectDetails .details-list"
-  );
+  // Get the existing elements in the HTML
+  const titleElement = document.getElementById("title");
+  const descriptionElement = document.getElementById("description");
+  const accordionContainer = document.getElementById("accordion-container");
 
-  // Update the section title
-  titleElement.textContent = data.title;
-
-  // Update the description
+  // Update the section title and description
+  titleElement.textContent = "WHAT WE DO";
   descriptionElement.textContent = data.text;
 
-  // Clear the existing list items
-  detailsListElement.innerHTML = "";
+  // Clear previous accordions
+  if (accordionContainer.innerHTML) {
+    accordionContainer.innerHTML = "";
+  }
 
-  // Add detailed information (example: bullet points for benefits or features)
-  data.details.forEach((feature) => {
-    const li = document.createElement("li");
-    li.textContent = feature;
-    detailsListElement.appendChild(li);
+  // Populate accordions dynamically
+  let index = 1;
+  Object.entries(data.details).forEach(([title, content]) => {
+    const accordionItem = document.createElement("div");
+    accordionItem.classList.add("accordion-item");
+
+    accordionItem.innerHTML = `
+      <button id="accordion-button-${index}" aria-expanded="false">
+        <span class="accordion-title">${title}</span>
+        <span class="icon" aria-hidden="true"></span>
+      </button>
+      <div class="accordion-content">
+        <p>${content}</p>
+      </div>
+    `;
+
+    accordionContainer.appendChild(accordionItem);
+    index++;
   });
+
+  // Reattach event listeners for toggling accordion
+  const items = document.querySelectorAll(".accordion button");
+
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
+
+    items.forEach((item) => item.setAttribute("aria-expanded", "false"));
+
+    if (itemToggle === "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
 }
 
-
-
-
-// Example: Dynamically load the 'engineering' service on page load
 document.addEventListener("DOMContentLoaded", () => {
   fetch("navbar.html")
     .then((response) => {
@@ -247,7 +260,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /*ADD Event listener on multiple elements*/
-
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
@@ -255,7 +267,6 @@ const addEventOnElements = function (elements, eventType, callback) {
 };
 
 /*NAVBAR TOGGLE FOR MOBILE */
-
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -271,7 +282,6 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 /**HEADER
  * active header when window scroll down to 100px
  */
-
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
@@ -281,63 +291,3 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
-
-/**SLIDER */
-
-const sliders = document.querySelectorAll("[data-slider]");
-
-const initSlider = function (currentSlider) {
-  const sliderContainer = currentSlider.querySelector(
-    "[data-slider-container]"
-  );
-  const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
-  const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
-
-  let currentSlidePos = 0;
-
-  const moveSliderItem = function () {
-    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
-  };
-
-  const slideNext = function () {
-    const slideEnd = currentSlidePos >= sliderContainer.children.length - 1;
-
-    if (slideEnd) {
-      currentSlidePos = 0;
-    } else {
-      currentSlidePos++;
-    }
-
-    moveSliderItem();
-  };
-  sliderNextBtn.addEventListener("click", slideNext);
-
-  const slidePrev = function () {
-    const slideStart = currentSlidePos <= 0;
-
-    if (slideStart) {
-      currentSlidePos = sliderContainer.children.length - 1;
-    } else {
-      currentSlidePos--;
-    }
-
-    moveSliderItem();
-  };
-  sliderPrevBtn.addEventListener("click", slidePrev);
-
-  // Hide buttons if there are not enough slides
-  const hideButtonsIfNeeded = function () {
-    if (sliderContainer.children.length <= 1) {
-      sliderNextBtn.style.display = "none";
-      sliderPrevBtn.style.display = "none";
-    }
-  };
-
-  // Initial setup
-  moveSliderItem();
-  hideButtonsIfNeeded();
-};
-
-for (let i = 0, len = sliders.length; i < len; i++) {
-  initSlider(sliders[i]);
-}

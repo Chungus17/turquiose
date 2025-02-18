@@ -1322,8 +1322,125 @@ Resonsive for larger than 1400 px screen
   padding: 20px;
 }
 
-.section-description,
-.project-details {
-  display: flex;
-  justify-content: center;
+
+.accordion {
+  /* Accordion Item */
+  .accordion-item {
+      border-bottom: 1px solid lightgray;
+  }
+
+  /* Button Styling */
+  button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: var(--black-coral); /* Replace with your preferred text color */
+      font-size: 2rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      transition: color 0.3s ease;
+
+      /* Hover and Focus */
+      &:hover, &:focus {
+          cursor: pointer;
+          color: var(--secondary-color);
+      }
+
+      &:hover::after, &:focus::after {
+          cursor: pointer;
+          color: var(--secondary-color);
+          border: 1px solid var(--secondary-color);
+      }
+
+      /* Accordion Title */
+      .accordion-title {
+          padding: 0.5em 1.5em 0.5em 0;
+      }
+
+      /* Icon */
+      .icon {
+          display: inline-block;
+          position: absolute;
+          top: 40px;
+          right: 0;
+          width: 22px;
+          height: 22px;
+          border: 1px solid;
+          border-radius: 22px;
+
+          /* Minus icon (default) */
+          &::before {
+              display: block;
+              position: absolute;
+              content: '';
+              top: 9px;
+              left: 5px;
+              width: 10px;
+              height: 2px;
+              background: currentColor;
+          }
+
+          /* Plus icon */
+          &::after {
+              display: block;
+              position: absolute;
+              content: '';
+              top: 5px;
+              left: 9px;
+              width: 2px;
+              height: 10px;
+              background: currentColor;
+          }
+      }
+  }
+
+  /* Active State */
+  button[aria-expanded="true"] {
+      color: var(--turquiose);
+      border-bottom: 1px solid var(--turquiose);
+  }
+
+  button[aria-expanded="true"] .icon::after {
+      width: 0; /* Hide vertical bar to turn plus into minus */
+  }
+
+  /* Accordion Content */
+  .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+  }
+
+  button[aria-expanded="true"] + .accordion-content {
+      opacity: 1;
+      max-height: 50em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+  }
+
+  .accordion-content p {
+      font-size: 1.75rem;
+      font-weight: 300;
+      margin: 2em 0;
+  }
+}
+
+
+.details .section-title {
+  margin-bottom: 20px;
+}
+
+.details .section-description {
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-top: 60px;
+  margin-bottom: 90px;
 }
