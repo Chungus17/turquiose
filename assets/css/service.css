@@ -1284,8 +1284,8 @@ Resonsive for larger than 1400 px screen
 @media (max-width: 475px) {
   .logo-light,
   .logo-dark {
-    width: 50px; /* Smaller width for phones */
-    height: 30px; /* Smaller height for phones */
+    width: 250px; /* Smaller width for phones */
+    height: 40px; /* Smaller height for phones */
   }
 }
 

@@ -238,6 +238,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((data) => {
       document.querySelector("#navbar-placeholder").innerHTML = data;
+
+      const navbar = document.querySelector("[data-navbar]");
+      const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+      const overlay = document.querySelector("[data-overlay]");
+
+      const toggleNavbar = function () {
+        console.log("Navbar toggled!");
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("nav-active");
+      };
+
+      addEventOnElements(navTogglers, "click", toggleNavbar);
     })
     .catch((error) => console.error("Error including navbar:", error));
   const urlParams = new URLSearchParams(window.location.search);

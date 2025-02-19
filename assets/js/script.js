@@ -200,7 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 const form = document.getElementById('myForm');
 const result = document.getElementById('result');
 

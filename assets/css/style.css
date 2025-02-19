@@ -1419,3 +1419,51 @@ Resonsive for larger than 1400 px screen
   border-radius: 5px;
   font-weight: bold;
 }
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--secondary-color), #2e7871, #2e7871);
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+  z-index: 9999;
+}
+
+#svg {
+  width: 90vw; /* Use a percentage-based width */
+  max-width: 900px; /* Prevent it from getting too large */
+  height: auto; /* Maintain aspect ratio */
+  clip-path: inset(0 100% 0 0);
+  animation: reveal 3s ease forwards;
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Start hidden */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+  }
+}
+
+.name-container {
+  height: 30px;
+  text-align: center;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
