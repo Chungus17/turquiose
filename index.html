@@ -450,26 +450,26 @@
               </li>
 
               <!-- Import & Export Services -->
-<li>
-  <a href="service-details.html?service=import_export">
-    <div class="service-card">
-      <div class="card-icon">
-        <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
-      </div>
+              <li>
+                <a href="service-details.html?service=import_export">
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+                    </div>
 
-      <h3 class="h4 card-title">Import & Export Services</h3>
+                    <h3 class="h4 card-title">Import & Export Services</h3>
 
-      <p class="card-text">
-        Providing high-quality materials and seamless global trade solutions to support various industries with efficiency and reliability.
-      </p>
+                    <p class="card-text">
+                      Providing high-quality materials and seamless global trade solutions to support various industries with efficiency and reliability.
+                    </p>
 
-      <a href="service-details.html?service=import_export" class="btn-text">
-        <span class="span">Learn More</span>
-        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-      </a>
-    </div>
-  </a>
-</li>
+                    <a href="service-details.html?service=import_export" class="btn-text">
+                      <span class="span">Learn More</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
 
             </ul>
           </div>
@@ -836,12 +836,17 @@
             </h2>
 
             <div class="get-in-touch">
-              <form class="form">
-                <p type="Name:" class="contact-form-label"><input placeholder="Write your name here.." class="contact-form-input"></input></p>
-                <p type="Email:" class="contact-form-label"><input placeholder="Let us know your email" class="contact-form-input"></input></p>
-                <p type="Phone:" class="contact-form-label"><input placeholder="Let us know how to contact you back.." class="contact-form-input"></input></p>
-                <p type="Message:" class="contact-form-label"><textarea placeholder="What would you like to tell us.." class="contact-form-input"></textarea></p>
-                <button class="contact-form-button">Send Message</button>
+              <form action="https://api.web3forms.com/submit" method="POST" id="myForm">
+                <input type="hidden" name="access_key" value="120862db-85b3-4863-9c31-286ea59ceabc">
+                <input type="hidden" name="subject" value="You have received a new message!">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+                <p type="Name:" class="contact-form-label"><input placeholder="Write your name here.." class="contact-form-input" name="name"></input></p>
+                <p type="Email:" class="contact-form-label"><input placeholder="Let us know your email" class="contact-form-input" name="email"></input></p>
+                <p type="Phone:" class="contact-form-label"><input placeholder="Let us know how to contact you back.." class="contact-form-input" name="Phone"></input></p>
+                <p type="Message:" class="contact-form-label"><textarea placeholder="What would you like to tell us.." class="contact-form-input" name="message"></textarea></p>
+                <button class="contact-form-button" type="submit">Send Message</button>
+                <div id="result"></div>
               </form>
             </div>
           </div>

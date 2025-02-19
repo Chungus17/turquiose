@@ -1410,3 +1410,12 @@ Resonsive for larger than 1400 px screen
   opacity: 1;
   transform: translateX(0);
 }
+
+#result {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
